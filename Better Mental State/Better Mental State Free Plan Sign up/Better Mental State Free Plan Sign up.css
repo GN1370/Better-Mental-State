@@ -1,0 +1,52 @@
+body{font-family: 'Gill Sans MT'; background: linear-gradient(to bottom, rgb(22, 94, 112), rgb(30, 163, 160), rgb(22, 94, 112));}
+header{font-weight: bold; background: linear-gradient(to right, rgb(30, 163, 160), rgb(66, 190, 166), rgb(30, 163, 160)); -webkit-text-fill-color: rgb(9, 40, 48); height: 50px; padding: 1px; margin: 10px; border-radius: 50px;}
+a:hover{-webkit-text-fill-color: rgb(22, 94, 112); background-color: rgb(255, 182, 157); border-radius: 50px; padding: 12px;}
+a{text-decoration: none; -webkit-text-fill-color: rgb(0, 0, 0);}
+.headlogo{height: 33px; margin-left: 7px; margin-top: -7px;}
+.headlogomirror{height: 33px; margin-right: 7px; margin-top: -7px;}
+.left{position: absolute; top: 20px; left: 20px;}
+.right{text-align: right;}
+.center{text-align: center;}
+
+form{text-align: center; }
+fieldset{border-width: 0; border-radius: 50px; background: linear-gradient(to right, rgb(30, 163, 160), rgb(66, 190, 166), rgb(30, 163, 160))}
+label{-webkit-text-fill-color: rgb(254, 215, 172);}
+input{border-radius: 50px; border-width: 0; text-align: center; height: 33px; width: 200px; -webkit-text-fill-color: rgb(22, 94, 112);}
+.othersignup{border-radius: 50px; border-width: 0; text-align: center; height: 33px; width: 200px; -webkit-text-fill-color: rgb(22, 94, 112);}
+.container {margin: 33px; display: flex; justify-content: center; align-items: center;}
+.signup{min-width: 300px; max-width: 300px; margin: 12px;}
+.btimgs{min-width: 40px; max-width: 800px; min-height: 50px; max-height: 1000px; border-radius: 30px;}
+.hover:hover{background-color: rgb(255, 182, 157); -webkit-text-fill-color: rgb(22, 94, 112);}
+
+footer{font-weight: bold; background: linear-gradient(to right, rgb(30, 163, 160), rgb(66, 190, 166), rgb(30, 163, 160)); border-radius: 50px; margin: 5px; padding-left: 100px; padding-right: 100px; padding-top: 50px; height: 333px;}
+.set{display: flex; justify-content: space-between;}
+.seperation{height: 40px;}
+.mar{margin-bottom: 100px; font-size: 22px;}
+.pad{padding: 10px}
+
+/*Animations*/
+.fade-in {opacity: 0; animation: fadeIn 1s ease-in-out forwards;}
+  @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+.slide-in-left {animation: slide-in-left 1s ease forwards; opacity: 0;  transform: translateX(-100%);}
+  @keyframes slide-in-left {
+    from {opacity: 0; transform: translateX(-100%);}
+    to {opacity: 1; transform: translateX(0%);}
+  }
+.slide-in-right {animation: slide-in-right 1s ease forwards; opacity: 0;  transform: translateX(200%);}
+  @keyframes slide-in-right {
+    from {opacity: 0; transform: translateX(200%);}
+    to {opacity: 1; transform: translateX(0%);}
+  }
+.slide-in-down {animation: slide-in-down 1s ease forwards; opacity: 0;  transform: translateY(200%);}
+  @keyframes slide-in-down {
+    from {opacity: 0; transform: translateY(-100%);}
+    to {opacity: 1; transform: translateY(0%);}
+  }  
+.slide-in-up {animation: slide-in-up 0.75s ease forwards; opacity: 0;  transform: translateY(200%);}
+  @keyframes slide-in-up {
+    from {opacity: 0; transform: translateY(200%);}
+    to {opacity: 1; transform: translateY(0%);}
+  }

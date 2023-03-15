@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="Gebran Elias Nemes">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="IMGS/logo2.png" type="image/x-icon">
+        <title>Better Mental State&trade; Free</title>
+        <link rel="stylesheet" type="text/css" href="Better Mental State Free.css">
+        <script src="Better Mental State Free.js"></script>
+    </head>
+    <body>
+        <header class="slide-in-down">
+            <p class="set">
+                <img src="IMGS/logo1.png" class="headlogo" alt="Better Mental State&trade; Logo">
+                <img src="IMGS/logo2.png" class="headlogomirror" alt="Better Mental State&trade; Logo">
+            </p>
+        </header>
+        <div class="goto slide-in-down">
+            <nav class="set">
+                <button onclick="goToGreet()">Greeting</button>
+                <button onclick="goToExercises()">Exercises</button>
+                <button onclick="goToMusic()">Music</button>
+                <button onclick="goToTipsResources()">Tips &amp; Resources</button>
+            </nav>
+        </div>
+        <div class="sections">
+            <section id="greet" class="fade-in section">
+                <h1>Hello <span id="firstname"></span>,</h1>
+                <script src="FN Input Output.js"></script>
+                <div>
+                    In the following, you will be able to find all of your basic needs<br>In order for you to have a Better Mental State&trade;<br>From tips all the way to some breathing and relaxing exercices<br>That will make you forget all of your daily stresses.<br>
+                </div><br>
+                <audio autoplay hidden>
+                    <source src="VOICE/Greeting.m4a" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>  
+            </section>
+            <div class="simg slide-in-up">
+                <img src="IMGS/sport.png" class="timg" alt="Exercising the brain">
+            </div>
+            <section id="exercises" class="slide-in-up section">
+                <section class="fade-in">
+                    <h1>Breathing Exercise</h1>
+                    <div class="breath">
+                        <h4>Here is a breathing exercise where you are advised to follow the instruction</h4>
+                        <iframe class="vds" src="https://www.youtube.com/embed/kpSkoXRrZnE" title="4-7-8 Breathing Technique" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                    </div>
+                </section>
+                <section class="fade-in">
+                    <h1>Meditating Exercise</h1>
+                    <div class="meditate">
+                        <h4>Here is a meditating exercise where you you can just lay down and relax until everything fades away for 5 minutes</h4>
+                        <iframe class="vds" src="https://www.youtube.com/embed/Smh_N2Jho7M" title="5 Minute Timer with Relaxing Music and Alarm" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>                </section>
+            </section>
+            <div class="bimg fade-in-s">
+                <img src="IMGS/meditation.png" class="rmimg" alt="Meditation">
+            </div>
+            <section id="music" class="fade-in-s section">
+                <h1>Music For You</h1>
+                <img src="IMGS/relaxmusic.png" class="rmimg fade-in-s" alt="Relaxing Music">
+                <br>
+                <button id="audio1">Anxiety Relief</button>
+                <button id="audio2">Meditation Music</button>
+                <button id="audio3">Overall Balance And Calm</button>
+                <br>
+                <button id="audio4">Relaxing Music with Ocean Waves</button>
+                <button id="audio5">Relaxing Piano For Deep Breathing</button>
+                <br><br>
+                <audio id="player" controls>
+                    <source id="source1" src="MUSIC/Anxiety Relief.mp3" type="audio/mpeg">
+                    <source id="source2" src="MUSIC/Meditation Music.mp3" type="audio/mpeg">
+                    <source id="source3" src="MUSIC/Overall Balance And Calm.mp3" type="audio/mpeg">
+                    <source id="source4" src="MUSIC/Relaxing Music with Ocean Waves.mp3" type="audio/mpeg">
+                    <source id="source5" src="MUSIC/Relaxing Piano For Deep Breathing.mp3" type="audio/mpeg">
+                </audio>
+                <script src="Audio.js"></script>
+            </section>
+            <section id="tips-resources">
+                <section id="tips" class="fade-in-s">
+                    <h1>Our Tips</h1>
+                    <ul>
+                        <li>Practice mindfulness</li><br>
+                        <li>Practice meditation</li><br>
+                        <li>Listen to relaxing music</li><br>
+                        <li>Get regular exercise</li><br>
+                        <li>Eat a healthy diet</li><br>
+                        <li>Connect with others</li><br>
+                        <li>Take breaks and rest when needed</li><br>
+                    </ul>
+                </section>
+                <section id="resources" class="fade-in-s">
+                    <h1>Helpful Resources</h1>
+                    <ul>
+                        <li><a href="https://embracelebanon.org/WhatWeDo/EMHC">Embrace, Lebanon</a></li><br>
+                        <li><a href="https://www.moph.gov.lb/en/Pages/6/553/nmhp#/en/Pages/6/553/nmhp">Ministry Of Public Health, Lebanon</a></li><br>
+                        <li><a href="https://www.who.int/news-room/fact-sheets/detail/mental-health-strengthening-our-response">WHO.int</a></li><br>
+                        <li><a href="https://www.nimh.nih.gov/health/topics/index.shtml">National Institute of Mental Health</a></li><br>
+                        <li><a href="https://www.nami.org/Home">National Alliance on Mental Illness</a></li><br>
+                        <li><a href="https://www.psychologytoday.com/">Psychology Today</a></li><br>
+                        <li><a href="https://www.mentalhealth.gov/">MentalHealth.gov</a></li><br>
+                    </ul>
+                </section>
+            </section>
+            <div class="limg fade-in-s">
+                <img src="IMGS/embrace.png" class="rmimg" alt="Meditation">
+            </div>
+        </div>
+        <footer>
+            <p class="center mar">
+                <a href="../About Better Mental State/About Better Mental State.html" class="pad">About Us</a>
+                <br><br>
+                <a href="../About The Founder/About The Founder.html" class="pad">About The Founder</a>
+                <br><br>
+                <a href="../Better Mental State (Main Page)/Better Mental State.html" class="pad">Home</a>
+            </p>
+            <p class="center set">
+                <a href=""><img src="IMGS/youtube.png" class="seperation" alt="YouTube"></a>
+                <a href=""><img src="IMGS/facebook.png" class="seperation" alt="Facebook"></a>
+                <a href=""><img src="IMGS/instagram.png" class="seperation" alt="Instagram"></a>
+                <a href=""><img src="IMGS/twitter.png" class="seperation" alt="Twitter"></a>
+                <a href=""><img src="IMGS/snapchat.png" class="seperation" alt="SnapChat"></a>
+                <a href=""><img src="IMGS/tiktok.png" class="seperation" alt="Tik Tok"></a>
+            </p>
+        </footer>
+        <p class="center">&copy; 2023 Better Mental State&trade;. All rights reserved.</p>
+    </body>
+</html>
